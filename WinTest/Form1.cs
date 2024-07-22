@@ -41,5 +41,10 @@ namespace WinTest
         {
 
         }
+
+        private void btnREFRESH_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

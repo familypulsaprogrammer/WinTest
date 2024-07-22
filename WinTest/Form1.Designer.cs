@@ -41,6 +41,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.JURUSAN = new System.Windows.Forms.ComboBox();
+            this.btnREFRESH = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -48,8 +49,9 @@
             // btnUPDATE
             // 
             this.btnUPDATE.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnUPDATE.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnUPDATE.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUPDATE.Location = new System.Drawing.Point(287, 144);
+            this.btnUPDATE.Location = new System.Drawing.Point(285, 144);
             this.btnUPDATE.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnUPDATE.Name = "btnUPDATE";
             this.btnUPDATE.Size = new System.Drawing.Size(110, 34);
@@ -61,8 +63,9 @@
             // btnHAPUS
             // 
             this.btnHAPUS.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnHAPUS.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnHAPUS.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHAPUS.Location = new System.Drawing.Point(405, 144);
+            this.btnHAPUS.Location = new System.Drawing.Point(401, 144);
             this.btnHAPUS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnHAPUS.Name = "btnHAPUS";
             this.btnHAPUS.Size = new System.Drawing.Size(110, 34);
@@ -74,6 +77,7 @@
             // btnTAMBAH
             // 
             this.btnTAMBAH.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnTAMBAH.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnTAMBAH.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTAMBAH.Location = new System.Drawing.Point(169, 144);
             this.btnTAMBAH.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -101,6 +105,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ID.Location = new System.Drawing.Point(169, 25);
             this.ID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ID.MaxLength = 9999;
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(459, 23);
             this.ID.TabIndex = 51;
@@ -144,6 +149,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ALAMAT.Location = new System.Drawing.Point(169, 83);
             this.ALAMAT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ALAMAT.MaxLength = 100;
             this.ALAMAT.Name = "ALAMAT";
             this.ALAMAT.Size = new System.Drawing.Size(459, 23);
             this.ALAMAT.TabIndex = 54;
@@ -154,6 +160,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NAMA.Location = new System.Drawing.Point(169, 54);
             this.NAMA.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.NAMA.MaxLength = 100;
             this.NAMA.Name = "NAMA";
             this.NAMA.Size = new System.Drawing.Size(459, 23);
             this.NAMA.TabIndex = 52;
@@ -161,6 +168,7 @@
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(4, 19);
@@ -187,6 +195,7 @@
             // 
             // JURUSAN
             // 
+            this.JURUSAN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.JURUSAN.FormattingEnabled = true;
             this.JURUSAN.Items.AddRange(new object[] {
             "Teknik Mesin",
@@ -199,12 +208,27 @@
             this.JURUSAN.Size = new System.Drawing.Size(346, 23);
             this.JURUSAN.TabIndex = 67;
             // 
+            // btnREFRESH
+            // 
+            this.btnREFRESH.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnREFRESH.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnREFRESH.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnREFRESH.Location = new System.Drawing.Point(517, 144);
+            this.btnREFRESH.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnREFRESH.Name = "btnREFRESH";
+            this.btnREFRESH.Size = new System.Drawing.Size(110, 34);
+            this.btnREFRESH.TabIndex = 68;
+            this.btnREFRESH.Text = "Refresh";
+            this.btnREFRESH.UseVisualStyleBackColor = false;
+            this.btnREFRESH.Click += new System.EventHandler(this.btnREFRESH_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(660, 530);
+            this.Controls.Add(this.btnREFRESH);
             this.Controls.Add(this.JURUSAN);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnUPDATE);
@@ -246,6 +270,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox JURUSAN;
+        private System.Windows.Forms.Button btnREFRESH;
     }
 }
 
