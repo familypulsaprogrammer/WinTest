@@ -28,5 +28,10 @@ namespace WinTest
             // proses hapus data
             // lalu close form jika berhasil
         }
+
+        private void FormAddMahasiswa_Load(object sender, EventArgs e)
+        {
+            // untuk mengisi combo box jurusan bisa di ambil dari database
+        }
     }
 }

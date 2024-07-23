@@ -19,7 +19,7 @@ namespace WinTest
 
         private void CARI_TextChanged(object sender, EventArgs e)
         {
-            // lalukan pencarian di event ini
+            // lalukan pencarian di event ini, search byjurusan
         }
 
         private void btnTAMBAH_Click(object sender, EventArgs e)
